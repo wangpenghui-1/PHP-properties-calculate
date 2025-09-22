@@ -2,8 +2,6 @@
 
 这是一个使用 Python、Tkinter 和 CoolProp 库开发的桌面应用程序，专门用于计算和查询脉动热管（Pulsating Heat Pipe, PHP）常用工质的热物理性质。
 
-![软件截图](https://github.com/user-attachments/assets/574e929f-723a-4414-b4a1-8d2b7ac3081e)
-
 ## ✨ 主要功能
 
 - **多种工质支持**: 内置多种常规及低温工质（如氦、氮、丙酮、水等），方便查询。
