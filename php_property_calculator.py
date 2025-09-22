@@ -191,15 +191,15 @@ class PHPPropertyCalculator(ThemedTk):
         h_frame.columnconfigure(1, weight=1)
 
         ttk.Label(h_frame, text="Darcy摩擦因子 (f):").grid(row=0, column=0, sticky=tk.W)
-        ttk.Label(h_frame, textvariable=self.darcy_f, font=("TkDefaultFont", 9, "bold")).grid(row=0, column=1, sticky=tk.W)
+        ttk.Label(h_frame, textvariable=self.darcy_f, font=("Consolas", 10, "bold")).grid(row=0, column=1, sticky=tk.W)
 
         ttk.Label(h_frame, text="努塞尔数 (Nu):").grid(row=1, column=0, sticky=tk.W)
-        ttk.Label(h_frame, textvariable=self.nusselt_nu, font=("TkDefaultFont", 9, "bold")).grid(row=1, column=1, sticky=tk.W)
+        ttk.Label(h_frame, textvariable=self.nusselt_nu, font=("Consolas", 10, "bold")).grid(row=1, column=1, sticky=tk.W)
 
         ttk.Label(h_frame, text="对流换热系数 (h):").grid(row=2, column=0, sticky=tk.W)
-        ttk.Label(h_frame, textvariable=self.htc_h, font=("TkDefaultFont", 9, "bold")).grid(row=2, column=1, sticky=tk.W)
+        ttk.Label(h_frame, textvariable=self.htc_h, font=("Consolas", 10, "bold")).grid(row=2, column=1, sticky=tk.W)
 
-        self.h_calc_button = ttk.Button(h_frame, text="计算 Nu & h", command=self.on_calculate_h_nu)
+        self.h_calc_button = ttk.Button(h_frame, text="计算 Nu & h", command=self.on_calculate_h_nu, takefocus=0)
         self.h_calc_button.grid(row=0, column=2, rowspan=3, padx=10, ipady=5)
 
         # --- 事件绑定 ---
